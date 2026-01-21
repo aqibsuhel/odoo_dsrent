@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Airports -->
+        <record id="airport_riyadh" model="limousine.airport">
+            <field name="name">King Khalid International Airport</field>
+            <field name="name_arabic">مطار الملك خالد الدولي</field>
+            <field name="code">RUH</field>
+            <field name="city_id" ref="city_riyadh"/>
+        </record>
+
+        <record id="airport_jeddah" model="limousine.airport">
+            <field name="name">King Abdulaziz International Airport</field>
+            <field name="name_arabic">مطار الملك عبدالعزيز الدولي</field>
+            <field name="code">JED</field>
+            <field name="city_id" ref="city_jeddah"/>
+        </record>
+
+        <record id="airport_dammam" model="limousine.airport">
+            <field name="name">King Fahd International Airport</field>
+            <field name="name_arabic">مطار الملك فهد الدولي</field>
+            <field name="code">DMM</field>
+            <field name="city_id" ref="city_dammam"/>
+        </record>
+
+        <record id="airport_madina" model="limousine.airport">
+            <field name="name">Prince Mohammad Bin Abdulaziz Airport</field>
+            <field name="name_arabic">مطار الأمير محمد بن عبدالعزيز</field>
+            <field name="code">MED</field>
+            <field name="city_id" ref="city_madina"/>
+        </record>
+
+        <record id="airport_abha" model="limousine.airport">
+            <field name="name">Abha Regional Airport</field>
+            <field name="name_arabic">مطار أبها الإقليمي</field>
+            <field name="code">AHB</field>
+            <field name="city_id" ref="city_abha"/>
+        </record>
+
+        <record id="airport_tabouk" model="limousine.airport">
+            <field name="name">Tabuk Regional Airport</field>
+            <field name="name_arabic">مطار تبوك الإقليمي</field>
+            <field name="code">TUU</field>
+            <field name="city_id" ref="city_tabouk"/>
+        </record>
+
+        <record id="airport_alula" model="limousine.airport">
+            <field name="name">AlUla International Airport</field>
+            <field name="name_arabic">مطار العلا الدولي</field>
+            <field name="code">ULH</field>
+            <field name="city_id" ref="city_alula"/>
+        </record>
+
+    </data>
+</odoo>

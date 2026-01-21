@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_limousine_booking_user,limousine.booking.user,model_limousine_booking,group_limousine_user,1,1,1,0
+access_limousine_booking_manager,limousine.booking.manager,model_limousine_booking,group_limousine_manager,1,1,1,1
+access_limousine_booking_service_line_user,limousine.booking.service.line.user,model_limousine_booking_service_line,group_limousine_user,1,1,1,0
+access_limousine_booking_service_line_manager,limousine.booking.service.line.manager,model_limousine_booking_service_line,group_limousine_manager,1,1,1,1
+access_limousine_region_user,limousine.region.user,model_limousine_region,group_limousine_user,1,0,0,0
+access_limousine_region_manager,limousine.region.manager,model_limousine_region,group_limousine_manager,1,1,1,1
+access_limousine_city_user,limousine.city.user,model_limousine_city,group_limousine_user,1,0,0,0
+access_limousine_city_manager,limousine.city.manager,model_limousine_city,group_limousine_manager,1,1,1,1
+access_limousine_branch_user,limousine.branch.user,model_limousine_branch,group_limousine_user,1,0,0,0
+access_limousine_branch_manager,limousine.branch.manager,model_limousine_branch,group_limousine_manager,1,1,1,1
+access_limousine_airport_user,limousine.airport.user,model_limousine_airport,group_limousine_user,1,0,0,0
+access_limousine_airport_manager,limousine.airport.manager,model_limousine_airport,group_limousine_manager,1,1,1,1

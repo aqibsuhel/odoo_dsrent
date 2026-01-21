@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Branches -->
+        <record id="branch_main" model="limousine.branch">
+            <field name="name">Main Branch</field>
+            <field name="city_id" ref="city_riyadh"/>
+        </record>
+
+        <record id="branch_marriott" model="limousine.branch">
+            <field name="name">Marriott Operations Ryd</field>
+            <field name="name_arabic">فرع الماريوت</field>
+            <field name="city_id" ref="city_riyadh"/>
+        </record>
+
+        <record id="branch_kharj" model="limousine.branch">
+            <field name="name">Kharj Branch</field>
+            <field name="name_arabic">فرع خريص</field>
+            <field name="city_id" ref="city_riyadh"/>
+        </record>
+
+        <record id="branch_laban" model="limousine.branch">
+            <field name="name">Laban Branch</field>
+            <field name="name_arabic">فرع لبن</field>
+            <field name="city_id" ref="city_riyadh"/>
+        </record>
+
+        <record id="branch_gulf" model="limousine.branch">
+            <field name="name">Gulf Branch</field>
+            <field name="name_arabic">فرع الخليج</field>
+            <field name="city_id" ref="city_riyadh"/>
+        </record>
+
+        <record id="branch_dammam_telecom" model="limousine.branch">
+            <field name="name">Dammam Operations</field>
+            <field name="name_arabic">فرع الدمام - حى الاتصالات</field>
+            <field name="city_id" ref="city_dammam"/>
+        </record>
+
+        <record id="branch_madina_rd_jeddah" model="limousine.branch">
+            <field name="name">Madina Rd. Operations Jed</field>
+            <field name="name_arabic">فرع طريق المدينة</field>
+            <field name="city_id" ref="city_jeddah"/>
+        </record>
+
+        <record id="branch_madina_ops" model="limousine.branch">
+            <field name="name">Madina Al Munawwara Operations</field>
+            <field name="name_arabic">فرع المدينة المنورة</field>
+            <field name="city_id" ref="city_madina"/>
+        </record>
+
+        <record id="branch_alula_ops" model="limousine.branch">
+            <field name="name">Al Ula Operations</field>
+            <field name="city_id" ref="city_alula"/>
+        </record>
+
+        <record id="branch_makkah_ops" model="limousine.branch">
+            <field name="name">Makkah Operations</field>
+            <field name="name_arabic">فرع مكة المكرمة - النزهة</field>
+            <field name="city_id" ref="city_makkah"/>
+        </record>
+
+        <record id="branch_marriott_embassy" model="limousine.branch">
+            <field name="name">Marriott Embassy</field>
+            <field name="name_arabic">ماريوت السفارات</field>
+            <field name="city_id" ref="city_riyadh"/>
+        </record>
+
+        <record id="branch_marriott_courtyard" model="limousine.branch">
+            <field name="name">Marriott Courtyard Hotel</field>
+            <field name="name_arabic">فندق ماريوت كورت يارد</field>
+            <field name="city_id" ref="city_riyadh"/>
+        </record>
+
+        <record id="branch_housh_alramal" model="limousine.branch">
+            <field name="name">Housh Al Ramal</field>
+            <field name="name_arabic">حوش الرمال</field>
+            <field name="city_id" ref="city_riyadh"/>
+        </record>
+
+        <record id="branch_smart_car_showroom" model="limousine.branch">
+            <field name="name">Smart Car Showroom</field>
+            <field name="name_arabic">معرض السيارة الذكية</field>
+            <field name="city_id" ref="city_riyadh"/>
+        </record>
+
+        <record id="branch_dar_almarkabah" model="limousine.branch">
+            <field name="name">DAR ALMARKABAH FOR RENTING CARS COMPANY</field>
+            <field name="city_id" ref="city_riyadh"/>
+        </record>
+
+    </data>
+</odoo>

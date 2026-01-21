@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Partner Form View - Inherit -->
+    <record id="view_partner_form_limousine" model="ir.ui.view">
+        <field name="name">res.partner.form.limousine</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Limousine Info">
+                    <group>
+                        <group>
+                            <field name="is_limousine_customer"/>
+                            <field name="business_type"/>
+                            <field name="is_driver"/>
+                            <field name="driver_type" invisible="not is_driver"/>
+                        </group>
+                        <group>
+                            <field name="limousine_booking_count"/>
+                            <button name="action_view_limousine_bookings"
+                                    string="View Bookings"
+                                    type="object"
+                                    class="oe_stat_button"
+                                    icon="fa-car"
+                                    invisible="limousine_booking_count == 0"/>
+                        </group>
+                    </group>
+                    <group string="Saudi Arabia ID Information">
+                        <group>
+                            <field name="national_id"/>
+                            <field name="id_type"/>
+                            <field name="id_issue_date"/>
+                            <field name="id_expiry_date"/>
+                            <field name="id_version_number"/>
+                        </group>
+                        <group>
+                            <field name="license_number"/>
+                            <field name="license_expiry_date"/>
+                            <field name="commercial_register"/>
+                            <field name="governmental_number"/>
+                            <field name="passport_number"/>
+                        </group>
+                    </group>
+                    <group string="Personal Information">
+                        <group>
+                            <field name="date_of_birth"/>
+                            <field name="nationality"/>
+                        </group>
+                    </group>
+                    <group string="Limousine Bookings">
+                        <field name="limousine_booking_ids" nolabel="1">
+                            <list>
+                                <field name="name"/>
+                                <field name="booking_date"/>
+                                <field name="booking_type"/>
+                                <field name="city_id"/>
+                                <field name="total_amount"/>
+                                <field name="state"/>
+                            </list>
+                        </field>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Limousine Contacts Action -->
+    <record id="action_limousine_contacts" model="ir.actions.act_window">
+        <field name="name">Contacts</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('is_limousine_customer', '=', True)]</field>
+        <field name="context">{'default_is_limousine_customer': True}</field>
+    </record>
+
+</odoo>

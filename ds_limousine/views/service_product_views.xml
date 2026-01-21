@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Product Form View - Inherit -->
+    <record id="view_product_template_form_limousine" model="ir.ui.view">
+        <field name="name">product.template.form.limousine</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='general_information']" position="after">
+                <page string="Limousine Service" invisible="not is_limousine_service">
+                    <group>
+                        <group>
+                            <field name="is_limousine_service"/>
+                            <field name="is_booking_service"/>
+                            <field name="can_be_rented"/>
+                        </group>
+                        <group>
+                            <field name="is_oil"/>
+                            <field name="is_gps"/>
+                            <field name="is_expenses"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Service Products Action -->
+    <record id="action_limousine_service_products" model="ir.actions.act_window">
+        <field name="name">Service Products</field>
+        <field name="res_model">product.product</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('is_limousine_service', '=', True)]</field>
+        <field name="context">{'default_is_limousine_service': True, 'default_type': 'service'}</field>
+    </record>
+
+</odoo>

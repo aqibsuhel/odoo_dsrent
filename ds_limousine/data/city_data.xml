@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Cities of Saudi Arabia -->
+        <record id="city_riyadh" model="limousine.city">
+            <field name="name">Riyadh</field>
+            <field name="name_arabic">الرياض</field>
+            <field name="region_id" ref="region_central"/>
+        </record>
+
+        <record id="city_madina" model="limousine.city">
+            <field name="name">Madina AlMunawara</field>
+            <field name="name_arabic">المدينة المنورة</field>
+            <field name="region_id" ref="region_north"/>
+        </record>
+
+        <record id="city_tabouk" model="limousine.city">
+            <field name="name">Tabouk</field>
+            <field name="name_arabic">تبوك</field>
+            <field name="region_id" ref="region_north"/>
+        </record>
+
+        <record id="city_dammam" model="limousine.city">
+            <field name="name">Dammam</field>
+            <field name="name_arabic">الدمام</field>
+            <field name="region_id" ref="region_east"/>
+        </record>
+
+        <record id="city_abha" model="limousine.city">
+            <field name="name">Abha</field>
+            <field name="name_arabic">أبها</field>
+            <field name="region_id" ref="region_south"/>
+        </record>
+
+        <record id="city_jeddah" model="limousine.city">
+            <field name="name">Jeddah</field>
+            <field name="name_arabic">جدة</field>
+            <field name="region_id" ref="region_west"/>
+        </record>
+
+        <record id="city_alula" model="limousine.city">
+            <field name="name">Al Ula</field>
+            <field name="name_arabic">العلا</field>
+            <field name="region_id" ref="region_north"/>
+        </record>
+
+        <record id="city_makkah" model="limousine.city">
+            <field name="name">Makkah Al Mukarrama</field>
+            <field name="name_arabic">مكة المكرمة</field>
+            <field name="region_id" ref="region_west"/>
+        </record>
+
+    </data>
+</odoo>

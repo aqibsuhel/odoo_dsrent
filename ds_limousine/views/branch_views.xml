@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Branch List View -->
+    <record id="view_limousine_branch_tree" model="ir.ui.view">
+        <field name="name">limousine.branch.tree</field>
+        <field name="model">limousine.branch</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="name_arabic"/>
+                <field name="city_id"/>
+                <field name="region_id"/>
+                <field name="phone"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Branch Form View -->
+    <record id="view_limousine_branch_form" model="ir.ui.view">
+        <field name="name">limousine.branch.form</field>
+        <field name="model">limousine.branch</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="name_arabic"/>
+                            <field name="city_id"/>
+                            <field name="region_id"/>
+                        </group>
+                        <group>
+                            <field name="phone"/>
+                            <field name="email"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="address" placeholder="Full address..."/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Branch Action -->
+    <record id="action_limousine_branch" model="ir.actions.act_window">
+        <field name="name">Branches</field>
+        <field name="res_model">limousine.branch</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

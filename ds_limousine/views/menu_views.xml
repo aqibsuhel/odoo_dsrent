@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Main Menu -->
+    <menuitem id="menu_limousine_root"
+              name="Limousine"
+              sequence="15"
+              groups="group_limousine_user,group_limousine_manager"/>
+
+    <!-- Booking Menu -->
+    <menuitem id="menu_limousine_booking"
+              name="Booking"
+              parent="menu_limousine_root"
+              action="action_limousine_booking"
+              sequence="10"
+              groups="group_limousine_user,group_limousine_manager"/>
+
+    <!-- Cities Menu -->
+    <menuitem id="menu_limousine_cities"
+              name="Cities"
+              parent="menu_limousine_root"
+              action="action_limousine_city"
+              sequence="20"
+              groups="group_limousine_user,group_limousine_manager"/>
+
+    <!-- Airports Menu -->
+    <menuitem id="menu_limousine_airports"
+              name="Airports"
+              parent="menu_limousine_root"
+              action="action_limousine_airport"
+              sequence="30"
+              groups="group_limousine_user,group_limousine_manager"/>
+
+    <!-- Service Products Menu -->
+    <menuitem id="menu_limousine_service_products"
+              name="Service Products"
+              parent="menu_limousine_root"
+              action="action_limousine_service_products"
+              sequence="40"
+              groups="group_limousine_user,group_limousine_manager"/>
+
+    <!-- Contacts Menu -->
+    <menuitem id="menu_limousine_contacts"
+              name="Contacts"
+              parent="menu_limousine_root"
+              action="action_limousine_contacts"
+              sequence="50"
+              groups="group_limousine_user,group_limousine_manager"/>
+
+    <!-- Configuration Menu -->
+    <menuitem id="menu_limousine_configuration"
+              name="Configuration"
+              parent="menu_limousine_root"
+              sequence="100"
+              groups="group_limousine_manager"/>
+
+    <!-- Regions under Configuration -->
+    <menuitem id="menu_limousine_regions"
+              name="Regions"
+              parent="menu_limousine_configuration"
+              action="action_limousine_region"
+              sequence="10"
+              groups="group_limousine_manager"/>
+
+    <!-- Branches under Configuration -->
+    <menuitem id="menu_limousine_branches"
+              name="Branches"
+              parent="menu_limousine_configuration"
+              action="action_limousine_branch"
+              sequence="20"
+              groups="group_limousine_manager"/>
+
+</odoo>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Region List View -->
+    <record id="view_limousine_region_tree" model="ir.ui.view">
+        <field name="name">limousine.region.tree</field>
+        <field name="model">limousine.region</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="city_count"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Region Form View -->
+    <record id="view_limousine_region_form" model="ir.ui.view">
+        <field name="name">limousine.region.form</field>
+        <field name="model">limousine.region</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <notebook>
+                        <page string="Cities">
+                            <field name="city_ids">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="name_arabic"/>
+                                    <field name="branch_count"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Region Action -->
+    <record id="action_limousine_region" model="ir.actions.act_window">
+        <field name="name">Regions</field>
+        <field name="res_model">limousine.region</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

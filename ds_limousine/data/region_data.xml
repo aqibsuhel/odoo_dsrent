@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Regions of Saudi Arabia -->
+        <record id="region_central" model="limousine.region">
+            <field name="name">Central</field>
+            <field name="code">CNT</field>
+        </record>
+
+        <record id="region_north" model="limousine.region">
+            <field name="name">North</field>
+            <field name="code">NTH</field>
+        </record>
+
+        <record id="region_south" model="limousine.region">
+            <field name="name">South</field>
+            <field name="code">STH</field>
+        </record>
+
+        <record id="region_east" model="limousine.region">
+            <field name="name">East</field>
+            <field name="code">EST</field>
+        </record>
+
+        <record id="region_west" model="limousine.region">
+            <field name="name">West</field>
+            <field name="code">WST</field>
+        </record>
+
+    </data>
+</odoo>

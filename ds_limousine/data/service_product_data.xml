@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Service Products -->
+        <record id="service_24_hours" model="product.product">
+            <field name="name">24 Hours Service</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+            <field name="is_booking_service" eval="True"/>
+        </record>
+
+        <record id="service_4_6_hours" model="product.product">
+            <field name="name">4-6 Hours</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+            <field name="is_booking_service" eval="True"/>
+        </record>
+
+        <record id="service_6_8_hours" model="product.product">
+            <field name="name">6-8 Hours</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+            <field name="is_booking_service" eval="True"/>
+        </record>
+
+        <record id="service_8_12_hours" model="product.product">
+            <field name="name">8-12 Hours (Full Day)</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+            <field name="is_booking_service" eval="True"/>
+        </record>
+
+        <record id="service_airport_dropoff" model="product.product">
+            <field name="name">Airport Dropoff</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+            <field name="is_booking_service" eval="True"/>
+        </record>
+
+        <record id="service_airport_pickup" model="product.product">
+            <field name="name">Airport Pickup</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+            <field name="is_booking_service" eval="True"/>
+        </record>
+
+        <record id="service_city_round_trip" model="product.product">
+            <field name="name">City Round Trip</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+            <field name="is_booking_service" eval="True"/>
+        </record>
+
+        <record id="service_coordinator" model="product.product">
+            <field name="name">Coordinator</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+        </record>
+
+        <record id="service_drivers" model="product.product">
+            <field name="name">Drivers</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+        </record>
+
+        <record id="service_executive" model="product.product">
+            <field name="name">Executive Services</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+            <field name="is_booking_service" eval="True"/>
+        </record>
+
+        <record id="service_inter_city" model="product.product">
+            <field name="name">Inter City</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+            <field name="is_booking_service" eval="True"/>
+        </record>
+
+        <record id="service_tour_guide" model="product.product">
+            <field name="name">Tour Guide</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+        </record>
+
+        <record id="service_transfer" model="product.product">
+            <field name="name">Transfer Service</field>
+            <field name="type">service</field>
+            <field name="list_price">1.0</field>
+            <field name="is_limousine_service" eval="True"/>
+            <field name="is_booking_service" eval="True"/>
+        </record>
+
+    </data>
+</odoo>

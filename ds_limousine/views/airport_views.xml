@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Airport List View -->
+    <record id="view_limousine_airport_tree" model="ir.ui.view">
+        <field name="name">limousine.airport.tree</field>
+        <field name="model">limousine.airport</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="name_arabic"/>
+                <field name="code"/>
+                <field name="city_id"/>
+                <field name="region_id"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Airport Form View -->
+    <record id="view_limousine_airport_form" model="ir.ui.view">
+        <field name="name">limousine.airport.form</field>
+        <field name="model">limousine.airport</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="name_arabic"/>
+                            <field name="code"/>
+                        </group>
+                        <group>
+                            <field name="city_id"/>
+                            <field name="region_id"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Airport Action -->
+    <record id="action_limousine_airport" model="ir.actions.act_window">
+        <field name="name">Airports</field>
+        <field name="res_model">limousine.airport</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

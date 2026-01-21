@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Vehicles from User's CSV File - CORRECTED VERSION -->
+        <!-- Only using fields that exist in ds.vehicle model -->
+
+        <record id="vehicle_toyota_camry_001" model="ds.vehicle">
+            <field name="registration_number">ABC-1234</field>
+            <field name="brand">Toyota</field>
+            <field name="model">Camry</field>
+            <field name="year">2024</field>
+            <field name="color">Silver</field>
+            <field name="vehicle_type">sedan</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">100.00</field>
+            <field name="weekly_rate">500.00</field>
+            <field name="monthly_rate">2000.00</field>
+            <field name="current_odometer">2500</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_honda_accord_002" model="ds.vehicle">
+            <field name="registration_number">XYZ-5678</field>
+            <field name="brand">Honda</field>
+            <field name="model">Accord</field>
+            <field name="year">2023</field>
+            <field name="color">White</field>
+            <field name="vehicle_type">sedan</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">95.00</field>
+            <field name="weekly_rate">480.00</field>
+            <field name="monthly_rate">1900.00</field>
+            <field name="current_odometer">1800</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_nissan_altima_003" model="ds.vehicle">
+            <field name="registration_number">KSA-9087</field>
+            <field name="brand">Nissan</field>
+            <field name="model">Altima</field>
+            <field name="year">2024</field>
+            <field name="color">Black</field>
+            <field name="vehicle_type">sedan</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">90.00</field>
+            <field name="weekly_rate">450.00</field>
+            <field name="monthly_rate">1800.00</field>
+            <field name="current_odometer">3200</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_hyundai_elantra_004" model="ds.vehicle">
+            <field name="registration_number">RUH-3321</field>
+            <field name="brand">Hyundai</field>
+            <field name="model">Elantra</field>
+            <field name="year">2023</field>
+            <field name="color">Blue</field>
+            <field name="vehicle_type">sedan</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">85.00</field>
+            <field name="weekly_rate">420.00</field>
+            <field name="monthly_rate">1700.00</field>
+            <field name="current_odometer">4100</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_kia_k5_005" model="ds.vehicle">
+            <field name="registration_number">DXB-7789</field>
+            <field name="brand">Kia</field>
+            <field name="model">K5</field>
+            <field name="year">2024</field>
+            <field name="color">Grey</field>
+            <field name="vehicle_type">sedan</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">92.00</field>
+            <field name="weekly_rate">460.00</field>
+            <field name="monthly_rate">1850.00</field>
+            <field name="current_odometer">2100</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_toyota_corolla_006" model="ds.vehicle">
+            <field name="registration_number">JED-1145</field>
+            <field name="brand">Toyota</field>
+            <field name="model">Corolla</field>
+            <field name="year">2023</field>
+            <field name="color">White</field>
+            <field name="vehicle_type">sedan</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">80.00</field>
+            <field name="weekly_rate">400.00</field>
+            <field name="monthly_rate">1600.00</field>
+            <field name="current_odometer">5200</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_chevrolet_malibu_007" model="ds.vehicle">
+            <field name="registration_number">MEK-6654</field>
+            <field name="brand">Chevrolet</field>
+            <field name="model">Malibu</field>
+            <field name="year">2024</field>
+            <field name="color">Red</field>
+            <field name="vehicle_type">sedan</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">98.00</field>
+            <field name="weekly_rate">490.00</field>
+            <field name="monthly_rate">1950.00</field>
+            <field name="current_odometer">1500</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_mazda_6_008" model="ds.vehicle">
+            <field name="registration_number">DAM-9901</field>
+            <field name="brand">Mazda</field>
+            <field name="model">6</field>
+            <field name="year">2023</field>
+            <field name="color">Silver</field>
+            <field name="vehicle_type">sedan</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">93.00</field>
+            <field name="weekly_rate">470.00</field>
+            <field name="monthly_rate">1880.00</field>
+            <field name="current_odometer">3600</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_ford_fusion_009" model="ds.vehicle">
+            <field name="registration_number">TAB-4432</field>
+            <field name="brand">Ford</field>
+            <field name="model">Fusion</field>
+            <field name="year">2022</field>
+            <field name="color">Black</field>
+            <field name="vehicle_type">sedan</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">88.00</field>
+            <field name="weekly_rate">430.00</field>
+            <field name="monthly_rate">1720.00</field>
+            <field name="current_odometer">7800</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_skoda_superb_010" model="ds.vehicle">
+            <field name="registration_number">HOF-2219</field>
+            <field name="brand">Skoda</field>
+            <field name="model">Superb</field>
+            <field name="year">2024</field>
+            <field name="color">Blue</field>
+            <field name="vehicle_type">sedan</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">105.00</field>
+            <field name="weekly_rate">520.00</field>
+            <field name="monthly_rate">2100.00</field>
+            <field name="current_odometer">900</field>
+            <field name="status">available</field>
+        </record>
+
+        <!-- Additional SUVs and Luxury Vehicles for Better Coverage -->
+
+        <record id="vehicle_toyota_fortuner_011" model="ds.vehicle">
+            <field name="registration_number">RUH-5501</field>
+            <field name="brand">Toyota</field>
+            <field name="model">Fortuner</field>
+            <field name="year">2024</field>
+            <field name="color">White Pearl</field>
+            <field name="vehicle_type">suv</field>
+            <field name="fuel_type">diesel</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">7</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">150.00</field>
+            <field name="weekly_rate">900.00</field>
+            <field name="monthly_rate">3500.00</field>
+            <field name="current_odometer">1200</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_toyota_landcruiser_012" model="ds.vehicle">
+            <field name="registration_number">JED-7788</field>
+            <field name="brand">Toyota</field>
+            <field name="model">Land Cruiser</field>
+            <field name="year">2024</field>
+            <field name="color">Black</field>
+            <field name="vehicle_type">suv</field>
+            <field name="fuel_type">diesel</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">7</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">200.00</field>
+            <field name="weekly_rate">1200.00</field>
+            <field name="monthly_rate">4500.00</field>
+            <field name="current_odometer">800</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_mercedes_eclass_013" model="ds.vehicle">
+            <field name="registration_number">RUH-9900</field>
+            <field name="brand">Mercedes-Benz</field>
+            <field name="model">E-Class</field>
+            <field name="year">2024</field>
+            <field name="color">Silver</field>
+            <field name="vehicle_type">luxury</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">180.00</field>
+            <field name="weekly_rate">1080.00</field>
+            <field name="monthly_rate">4000.00</field>
+            <field name="current_odometer">500</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_bmw_5series_014" model="ds.vehicle">
+            <field name="registration_number">JED-3344</field>
+            <field name="brand">BMW</field>
+            <field name="model">5 Series</field>
+            <field name="year">2024</field>
+            <field name="color">Blue</field>
+            <field name="vehicle_type">luxury</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">175.00</field>
+            <field name="weekly_rate">1050.00</field>
+            <field name="monthly_rate">3900.00</field>
+            <field name="current_odometer">1100</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_lexus_es350_015" model="ds.vehicle">
+            <field name="registration_number">DMM-2233</field>
+            <field name="brand">Lexus</field>
+            <field name="model">ES 350</field>
+            <field name="year">2024</field>
+            <field name="color">Pearl White</field>
+            <field name="vehicle_type">luxury</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">160.00</field>
+            <field name="weekly_rate">960.00</field>
+            <field name="monthly_rate">3600.00</field>
+            <field name="current_odometer">2200</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_gmc_yukon_016" model="ds.vehicle">
+            <field name="registration_number">RUH-6677</field>
+            <field name="brand">GMC</field>
+            <field name="model">Yukon</field>
+            <field name="year">2024</field>
+            <field name="color">Black</field>
+            <field name="vehicle_type">suv</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">8</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">190.00</field>
+            <field name="weekly_rate">1140.00</field>
+            <field name="monthly_rate">4200.00</field>
+            <field name="current_odometer">600</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_chevrolet_suburban_017" model="ds.vehicle">
+            <field name="registration_number">JED-8899</field>
+            <field name="brand">Chevrolet</field>
+            <field name="model">Suburban</field>
+            <field name="year">2024</field>
+            <field name="color">White</field>
+            <field name="vehicle_type">suv</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">8</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">185.00</field>
+            <field name="weekly_rate">1110.00</field>
+            <field name="monthly_rate">4100.00</field>
+            <field name="current_odometer">1500</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_hyundai_sonata_018" model="ds.vehicle">
+            <field name="registration_number">DMM-5566</field>
+            <field name="brand">Hyundai</field>
+            <field name="model">Sonata</field>
+            <field name="year">2024</field>
+            <field name="color">Grey</field>
+            <field name="vehicle_type">sedan</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">90.00</field>
+            <field name="weekly_rate">450.00</field>
+            <field name="monthly_rate">1800.00</field>
+            <field name="current_odometer">3400</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_toyota_camry_019" model="ds.vehicle">
+            <field name="registration_number">MAK-4455</field>
+            <field name="brand">Toyota</field>
+            <field name="model">Camry</field>
+            <field name="year">2024</field>
+            <field name="color">Black</field>
+            <field name="vehicle_type">sedan</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">5</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">100.00</field>
+            <field name="weekly_rate">500.00</field>
+            <field name="monthly_rate">2000.00</field>
+            <field name="current_odometer">1200</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_nissan_patrol_020" model="ds.vehicle">
+            <field name="registration_number">RUH-7788</field>
+            <field name="brand">Nissan</field>
+            <field name="model">Patrol</field>
+            <field name="year">2024</field>
+            <field name="color">White</field>
+            <field name="vehicle_type">suv</field>
+            <field name="fuel_type">petrol</field>
+            <field name="transmission">automatic</field>
+            <field name="seats">7</field>
+            <field name="doors">4</field>
+            <field name="daily_rate">195.00</field>
+            <field name="weekly_rate">1170.00</field>
+            <field name="monthly_rate">4300.00</field>
+            <field name="current_odometer">2100</field>
+            <field name="status">available</field>
+        </record>
+
+    </data>
+</odoo>
