@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: odoo-app
+    env: docker
+    plan: free
